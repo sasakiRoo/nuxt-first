@@ -10,8 +10,8 @@ export default {
 </script>
 
 <template>
-	<div class="card bg-slate-200 my-2 w-64 h-96 p-2">
-		<h1>{{ title }}</h1>
+	<div class="card bg-slate-200 my-2 w-64 p-2">
+		<h1 class="font-semibold">{{ title }}</h1>
 		<p class="h-48 overflow-hidden">{{ descr }}</p>
 		<p class="text-green-800">${{ price }}</p>
 		<NuxtLink :to="`posts/${id}`">

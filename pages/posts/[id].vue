@@ -1,12 +1,13 @@
 <script setup>
-const route = useRoute()
-
-// When accessing /posts/1, route.params.id will be 1
-console.log(route.params.id)
+const { id } = useRoute().params
+const uri = 'https://fakestoreapi.com/products/' + id
+const { data: product } = useFetch(uri)
 </script>
 
 <template>
-	<div class="pt-10">
-		<h1>hi {{ route.params.id }}</h1>
+	<div class="pt-10 h-screen">
+		<h1>{{ product.title }}</h1>
+		<p>{{ product.description }}</p>
+		<p>{{ product.price }}</p>
 	</div>
 </template>

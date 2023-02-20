@@ -4,7 +4,7 @@
             <NuxtLink to="/">Kiroo Blog</NuxtLink>
             <ul class="flex justify-around">
                 <li class="mx-10">
-                    <NuxtLink to="/tutorial">Tutorial</NuxtLink>
+                    <NuxtLink to="/products">Products</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/about">About</NuxtLink>
